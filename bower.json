@@ -1,0 +1,16 @@
+{
+  "name": "workpackage",
+  "version": "0.0.0",
+  "description": "bower package",
+  "main": "sass",
+  "keywords": [
+    "elliot",
+    "sway"
+  ],
+  "authors": [
+    "alexander køppen"
+  ],
+  "license": "MIT",
+  "homepage": "elliotsway.com",
+  "private": true
+}

@@ -1,0 +1,70 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+$font-url--google: "http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
+
+$font-family--primary: 'lato', 'helvetica Neue';
+$font-family--secondary: 'helvetica Neue';
+
+// Font Weights
+$font-weight--thin: 100;
+$font-weight--light: 300;
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+$font-weight--ultra-bold: 900;
+// Descriptive Base Colors
+$white:  #fff;
+$black:  #0b0b0b;
+$grey: #797e83;
+
+// Color Usage
+$fontain-blue: #52bab3;
+$emerald: #5ece7f;
+$sunglo: #e67478;
+$coral: #ff784f;
+$purple-majesty: #9279c3;
+$scooter: #39add1;
+
+$color-primary:$fontain-blue;
+$color-secondary: $scooter;
+$color-accent:  $emerald;
+$color-shadow: rgba($black,.2);
+
+// color palette Modifiers
+
+$palettes: (
+   grey:(
+	xx-light: lighten($grey, 45%),	
+	x-light: lighten($grey, 35%),   
+	light: lighten($grey, 12%), 
+    base: $grey,
+	dark: darken($grey, 8%),
+	x-dark: darken($grey, 16%) 
+   ),
+   black:(
+    light: lighten($black, 10%),
+	base:  $black,
+	dark:  darken($black, 10%)   
+   )
+);
+//ui colors
+
+$ui-colors:(
+    default: $fontain-blue,
+    succes: $emerald,
+    error: $sunglo,
+    warning: $coral,
+    info : $purple-majesty
+    
+
+);
+// Text
+$base__font-size: 16px;
+$base__line: 24px;
+$letter-spacing: 1px;
+
+// path to assets
+
+$path--rel:"../img";

@@ -1,0 +1,57 @@
+// ==========================================================================
+// Extends
+// ==========================================================================
+
+// Buttons
+
+%btn {
+  padding: 15px 30px;
+  border: 0;
+  border-radius : 2px;
+  color: $white;
+  text-transform: uppercase;
+  font-size : em(14px);
+  font-weight: $font-weight--medium;
+
+  display: block;
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}
+//Nav items
+
+%nav-item-disp{
+	display: inline-block;
+	margin: 0 em(12px);
+}
+%nav-item-link{
+	font-size: em(18px);
+	font-weight: $font-weight--light;
+	display:block;
+	padding: em(8px, 18px);
+	border-bottom: 1px solid transparent;
+	text-decoration: none;
+}
+%nav-item-on{
+	color: palette(black);
+	border-color: $color-primary;
+}
+
+//headlines
+%hdln-prim{
+	font-weight: $font-weight--light;
+	font-size: em(42px);
+	line-height: (46px / 42px);
+	margin-bottom: em(70px, 42px);
+	color: palette(grey, x-dark);
+}
+%hdln-sec{
+	font-family: $font-family--secondary;
+	font-weight:  $font-weight--thin;
+	font-size: em(24px);
+	color: palette(grey, light);
+	letter-spacing: $letter-spacing;
+}

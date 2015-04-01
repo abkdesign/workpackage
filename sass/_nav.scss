@@ -1,0 +1,73 @@
+.nav{
+	margin-top: em(20px);
+	margin-bottom: em(30px);
+	//element class with ampersand - two underscore
+	@include e(item){
+		
+        //placeholder
+		@extend %nav-item-disp;
+		
+		a{
+			
+			//placeholder
+			@extend %nav-item-link;
+			color: palette(grey);
+			&:hover{
+				
+			//placeholder
+				@extend %nav-item-on;
+			}
+			
+		}
+	}
+	//modifer class with ampersand - two hypens
+	@include m(current){
+		//placeholder
+		@extend %nav-item-disp;
+
+		a{
+			//placeholder
+			@extend %nav-item-link;
+			@extend %nav-item-on;
+		}
+    }
+}
+
+/*
+//element class with ampersand - two underscore
+&__item{
+display: inline-block;
+margin: 0 em(12px);
+
+a{
+font-size: em(18px);
+font-weight: $font-weight--light;
+color: palette(grey);
+display:block;
+padding: em(8px, 18px);
+border-bottom: 1px solid transparent;
+text-decoration: none;
+}
+}
+//modifer class with ampersand - two hypens
+&--current a{
+color: palette(black);
+border-color: $color-primary;
+}
+
+.base {
+// Base styles here...
+
+&__element {
+// Element styles here...
+
+&--modifier {
+// Element modifier styles here...
+}
+}
+
+&--modifier {
+// Parent modifier styles...
+}
+}
+*/

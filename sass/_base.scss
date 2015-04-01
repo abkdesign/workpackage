@@ -1,0 +1,39 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+    font-size: $base__font-size;
+    line-height: ($base__line/$base__font-size);
+    font-family: $font-family--primary;
+}
+header {
+  text-align:center;
+  padding: em(48px) 0;
+}
+
+h1{
+	@extend %hdln-prim;
+}
+h2{
+	@extend %hdln-sec;
+}
+p{
+	font-size: em(18px);
+	line-height: (27px / 18px);
+	margin: 0 0 em(30px, 18px);
+	font-weight: $font-weight--light;
+}
+blockquote{
+	font-size: em(24px);
+	font-style: italic;
+	font-weight: $font-weight--light;
+	margin: em(32px, 24px) 0;
+	paddin: 0 0 0 5%;
+	border-left: solid em(8px, 24px) palette(grey, xx-light);
+	
+}
